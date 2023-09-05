@@ -2,6 +2,9 @@ const apiKey = 'AIzaSyBeliNXTnz9u1Jkvly3b0GH7nPec96G_2g';
 const baseUrl = "https://www.googleapis.com/youtube/v3";
 let searchQuery = "latest";
 //window.onload = searchVideos("latest");
+window.addEventListener("load",()=>{
+  searchVideos(searchQuery);
+})
 const searchButton = document.getElementById("search-button");
 const searchInput = document.getElementById("search-input");
 const container = document.getElementById("videos-section");
