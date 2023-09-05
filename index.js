@@ -8,7 +8,7 @@ const container = document.getElementById("videos-section");
 
 function navigateToVideoDetails(videoId,title) {
   document.cookie = `id=${videoId}; path=/play-video.html`;
-  window.location.href = "/play-video.html";
+  window.location.href = "https://harinath-2022d.github.io/yt-clone/play-video.html";
 }
 
 function calculateTheTimeGap(publishTime) {
