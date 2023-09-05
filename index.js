@@ -8,7 +8,7 @@ const container = document.getElementById("videos-section");
 
 function navigateToVideoDetails(videoId,title) {
   document.cookie = `id=${videoId}; path=/play-video.html`;
-  window.location.href = "http://127.0.0.1:3000/play-video.html";
+  window.location.href = "/play-video.html";
 }
 
 function calculateTheTimeGap(publishTime) {
