@@ -1,8 +1,8 @@
 const apiKey = 'AIzaSyBeliNXTnz9u1Jkvly3b0GH7nPec96G_2g';
 const url = "https://www.googleapis.com/youtube/v3/commentThreads";
 const commentsContainer = document.getElementById("comments-container");
-console.log(document.cookie.split("="));
-console.log(document.cookie.split("=")[1].split(";")[0]);
+//console.log(document.cookie.split("="));
+//console.log(document.cookie.split("=")[1].split(";")[0]);
 window.addEventListener("load", () => {
   let videoId = document.cookie.split("=")[1].split(";")[0];
   console.log(videoId);
@@ -39,9 +39,9 @@ async function loadComments(videoId) {
     const {
       authorDisplayName,
       textDisplay,
-      likeCount,
+      //likeCount,
       authorProfileImageUrl: profileUrl,
-      publishedAt,
+     // publishedAt,
     } = item.snippet.topLevelComment.snippet;
 
     const div = document.createElement("div");
