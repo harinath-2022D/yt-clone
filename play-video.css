@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main{
+  padding-left: 80px;
+  margin-top: 80px;
+}
+#video-placeholder{
+  width: 60vw;
+  height: 35vw;
+}
+#comments-container{
+  padding: 0px 80px;
+}
+#video-info{
+  line-height: 1.5;
+}
+.comment {
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 4px rgba(202, 200, 200, 0.531);
+  padding: 10px 20px;
+}
+
+.author-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-right: 30px;
+}
+
+.item{
+  margin-top: 10px;
+  padding-right: 20px;
+}
