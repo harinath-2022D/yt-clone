@@ -4,7 +4,8 @@ const commentsContainer = document.getElementById("comments-container");
 //console.log(document.cookie.split("="));
 //console.log(document.cookie.split("=")[1].split(";")[0]);
 window.addEventListener("load", () => {
-  let videoId = document.cookie.split("=")[1].split(";")[0];
+  let videoId = localStorage.getItem("id");
+  //let videoId = document.cookie.split("=")[1].split(";")[0];
   console.log(videoId);
   if (YT) {
     new YT.Player("video-placeholder", {

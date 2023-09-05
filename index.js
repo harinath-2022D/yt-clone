@@ -7,7 +7,8 @@ const searchInput = document.getElementById("search-input");
 const container = document.getElementById("videos-section");
 
 function navigateToVideoDetails(videoId,title) {
-  document.cookie = `id=${videoId}; path=/play-video.html`;
+  //document.cookie = `id=${videoId}; path=/play-video.html`;
+  localStorage.setItem("id", videoId);
   window.location.href = "https://harinath-2022d.github.io/yt-clone/play-video.html";
 }
 
